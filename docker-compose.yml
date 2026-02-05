@@ -1,0 +1,12 @@
+services:
+  matrix-rss:
+    image: ghcr.io/fingo2409/matrix-rss:latest
+    container_name: matrix-rss
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      FEED_URLS: ${FEED_URLS}
+      MATRIX_SERVER: ${MATRIX_SERVER}
+      MATRIX_ROOM_ID: ${MATRIX_ROOM_ID}
+      MATRIX_TOKEN: ${MATRIX_TOKEN}
+      CHECK_INTERVAL: ${CHECK_INTERVAL}

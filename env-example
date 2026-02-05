@@ -1,0 +1,7 @@
+# edit to your needs and save as .env
+
+FEED_URLS=foo.net/feed.xml,foo2.com/feeds/all.atom.xml,foo3.info/rss/atom.xml
+MATRIX_SERVER=https://matrix.org
+MATRIX_ROOM_ID=!12345:matrix.org
+MATRIX_TOKEN=abc123
+CHECK_INTERVAL=60
